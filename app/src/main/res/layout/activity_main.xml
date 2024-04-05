@@ -8,9 +8,10 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/enterEditText"
+        android:id="@+id/ageEditText"
         android:layout_width="298dp"
         android:layout_height="68dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="Enter your age here"
         android:inputType="text"
@@ -19,10 +20,10 @@
         android:textSize="70px"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.333" />
+        app:layout_constraintVertical_bias="0.36" />
 
     <Button
         android:id="@+id/clearButton"
@@ -31,13 +32,13 @@
         android:background="#BD2828"
         android:text="Clear"
         android:textColor="#E0E0E0"
-        android:textSize="70px"
+        android:textSize="50px"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/generateButton"
-        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintHorizontal_bias="0.406"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.599" />
+        app:layout_constraintVertical_bias="0.593" />
 
     <Button
         android:id="@+id/generateButton"
@@ -45,36 +46,38 @@
         android:layout_height="81dp"
         android:background="#5E982F"
         android:text="Generate"
-        android:textSize="70px"
+        android:textSize="50px"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.841"
+        app:layout_constraintHorizontal_bias="0.937"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enterEditText"
-        app:layout_constraintVertical_bias="0.273" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.596" />
 
     <TextView
         android:id="@+id/outputTextView"
-        android:layout_width="268dp"
-        android:layout_height="152dp"
+        android:layout_width="341dp"
+        android:layout_height="210dp"
         android:background="@drawable/rounded_text_view"
+        android:textColor="#000000"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.894" />
+        app:layout_constraintVertical_bias="0.953" />
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="411dp"
-        android:layout_height="183dp"
-        android:text="TextView"
+        android:id="@+id/logoTextView"
+        android:layout_width="412dp"
+        android:layout_height="173dp"
+        android:background="@drawable/logo_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.005" />
+        app:layout_constraintVertical_bias="0.064"
+        tools:ignore="VisualLintBounds" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
